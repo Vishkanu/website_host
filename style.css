@@ -13,6 +13,7 @@ nav>ul {
     position: fixed;
     display: flex;
     z-index: 99999;
+    animation: fadeIn 2s;
 }
 
 main {
@@ -32,7 +33,7 @@ main {
 
 .Portfolio{
     border: 0.5em solid rgb(62, 22, 75);
-    border-radius: 0.1em;
+    border-radius: 0.5em;
     padding: 1em;
     
 }
@@ -100,7 +101,7 @@ nav>ul>li {
 }
 
 header {
-    display: block;
+    display: inline-block;
     text-align: left;
     font-size: 40px;
     grid-area: header;
@@ -110,9 +111,23 @@ header {
     background-color: rgb(39, 70, 144);
     color: white;
     padding: 100px;
-    font-family: arial;
     animation: fadeIn 2s;
+    font-family: arial; 
     text-align: center;
+}
+h1.appear_animation{
+    overflow: hidden;
+    display: inline-block;
+    animation:appear 4s;
+}
+
+@keyframes appear{
+    from{
+        color:transparent;
+    }
+    to{
+        color:white;
+    }
 }
 
 aside {
@@ -161,6 +176,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    animation:fadeIn 4s;
 }
 .image_container_full {
     height: 13em;
@@ -179,7 +195,7 @@ footer {
 
 @keyframes fadeIn {
     0% {
-        opacity: 0.5;
+        opacity: 0.8;
     }
 
     100% {

@@ -1,0 +1,201 @@
+nav {
+    position: fixed;
+    top: 0;
+    left: 30%;
+    width: 70%;
+    height: 20vh;
+    background-color: rgb(39, 70, 144);
+    z-index: 999;
+}
+.navigation{
+    display: none;
+}
+nav ul li {
+    display: block;
+    font-size: 20px;
+    width: 100%;
+    text-align: center;
+    font-family: Arial;
+    padding-top: 0.2em;
+    animation: fadeIn 2s;
+}
+
+.nav_button {
+    font-size: 20px;
+    width: 90%;
+    background-color: rgb(62, 22, 75);
+    color: white;
+}
+
+.nav_button_selected {
+    font-size: 30px;
+    width: 90%;
+    background-color: rgb(97, 61, 141);
+    color: white;
+}
+
+
+header {
+    display: block;
+    font-size: 30px;
+    grid-area: header;
+    background-image: url(starry_sky.jpg);
+    background-position: center;
+    background-size: 200%;
+    background-color: rgb(39, 70, 144);
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    padding: 2em;
+}
+
+body {
+    margin: 0;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas:
+        "nav"
+        "header"
+        "main"
+        "aside"
+        "footer"
+    ;
+}
+
+
+
+main {
+    padding: 1em;
+    font-size: 18px;
+    font-family: arial;
+}
+
+main h2 {
+    padding-bottom: 0.5em;
+    padding-top: 0.3em;
+    padding-left: 0.3em;
+    text-align: center;
+}
+
+main h3 {
+    padding-bottom: 1em;
+    padding-top: 1em;
+}
+
+
+
+
+
+
+.image_container img {
+    height: 100%;
+    min-width: 100%;
+    border-radius: 5%;
+}
+
+.image_container {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container_full {
+    height: 15em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_container_full img {
+    height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    border-radius: 5%;
+}
+
+
+
+
+.main_text {
+    padding-bottom: 15px;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(49, 19, 129);
+    animation: fadeIn 2s;
+    color: white;
+    font-size: 20px;
+    padding: 1em;
+}
+
+aside h2 {
+    text-align: center;
+}
+
+.aside_text {
+    padding: 1em;
+}
+
+.showNav {
+    height: 1em;
+    width: 2em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.2em;
+}
+
+.showNav::before {
+    content: '';
+    position: absolute;
+    width: 2em;
+    margin-top: 0.4em;
+    border-top: 0.2em solid white;
+}
+
+.hamburger {
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(39, 70, 144);
+    padding: 0.2em;
+    width: 100vw;
+    animation: fadeIn 2s;
+}
+
+.hideNav {
+    height: 1em;
+    width: 2em;
+    display: block;
+    border-top: 0.2em solid white;
+    border-bottom: 0.2em solid white;
+    border-radius: 0.2em;
+}
+
+.hideNav::before {
+    content: '';
+    position: absolute;
+    width: 2em;
+    margin-top: 0.4em;
+    border-top: 0.2em solid white;
+}
+
+#clicked .showNav{
+    display:block;
+}
+
+#clicked .hideNav {
+    display: none;
+}
+
+#clicked:target .navigation{
+    display: block;
+}
+#clicked:target .showNav{
+    display: none;
+}
+#clicked:target .hideNav{
+    display: block;
+}

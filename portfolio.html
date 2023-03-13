@@ -5,23 +5,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
     <title>Portfolio</title>
 </head>
 <!--(Portfolio page) this page will contain placeholder images that will eventually 
     be replaced with your work from term 2 and other modules where you make things worthy of your portfolio.
     You need to use columns on this page to demonstrate your skill.-->
 
-<body>
-    <nav>
-        <ul>
-            <li><a href="index.html"><button class="nav_button">Home</button></a></li>
-            <li><a href="portfolio.html"><button class="nav_button_selected">Portfolio</button></a></li>
-            <li><a href="contact.html"><button class="nav_button">Contact</button></a></li>
-            <li><a href="workexperience.html"><button class="nav_button">Experience</button></a></li>
-            <li><a href="sitereport.html"><button class="nav_button">Site Report</button></a></li>
-        </ul>
-    </nav>
+    <body id="clicked">
+        <section class="hamburger">
+            <a href="#clicked" class="showNav"></a>
+            <a href="#" class="hideNav"></a>
+        </section>  
+        <nav class = "navigation">
+                <ul>
+                    <li><a href="index.html"><button class="nav_button">Home</button></a></li>
+                    <li><a href="portfolio.html"><button class="nav_button_selected">Portfolio</button></a></li>
+                    <li><a href="contact.html"><button class="nav_button">Contact</button></a></li>
+                    <li><a href="workexperience.html"><button class="nav_button">Experience</button></a></li>
+                    <li><a href="sitereport.html"><button class="nav_button">Site Report</button></a></li>
+                </ul>
+        </nav>
     <header>
         <h1>My Portfolio</h1>
     </header>

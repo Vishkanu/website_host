@@ -5,13 +5,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
     <title>Work Experience</title>
 </head>
 <!--(Work Experience page) You will use columns on this page to demonstrate your skill.
     The content should be based on any work experience you have, if you don’t have any work experience you can fake it for example “Working for 10 years at Google”.-->
 
-    <nav>
+<body id="clicked">
+    <section class="hamburger">
+        <a href="#clicked" class="showNav"></a>
+        <a href="#" class="hideNav"></a>
+    </section>
+    <nav class="navigation">
         <ul>
             <li><a href="index.html"><button class="nav_button">Home</button></a></li>
             <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>
@@ -35,5 +42,6 @@
 
 
     <footer>&copy; Michael Leggett 2023</footer>
+</body>
 
 </html>

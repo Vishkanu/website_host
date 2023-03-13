@@ -5,14 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
     <title>Contact</title>
 </head>
 <!--(Contact page) this page will contain your contact information and a form.Note: For CSY1063 you make the form launch the user’s email program.
     Although this is not strictly the best way of working, you won’t be able to implement a better solution
     as that requires a server-side language such as PHP which we will not use in this module.-->
 
-    <nav>
+<body id="clicked">
+    <section class="hamburger">
+        <a href="#clicked" class="showNav"></a>
+        <a href="#" class="hideNav"></a>
+    </section>
+    <nav class="navigation">
         <ul>
             <li><a href="index.html"><button class="nav_button">Home</button></a></li>
             <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>
@@ -26,8 +33,19 @@
     </header>
 
     <main>
-        <p>My name is Michael and I would like to introduce you to the purpose of this page.
-            This page will display both my ability to create it and to display my future projects and other work.</p>
+        <h2>Contact me!</h2>
+        <p>Below you will find a contact form that you can fill in to send an email to me regarding your inquiry. I will
+            be
+            sure to get back to you as soon as I can.</p>
+
+        <form class="form_contact" action="#" method="GET">
+            <label for="f_name">Firstname:</label>
+            <input type="text" name="f_name" placeholder="Please enter your first name...">
+            <label for="l_name">Lastname:</label>
+            <input type="text" name="l_name" placeholder="Please enter your last name...">
+
+
+        </form>
     </main>
     <aside>
         <p class="aside_index">Right side of the page</p>
@@ -36,5 +54,6 @@
 
 
     <footer>&copy; Michael Leggett 2023</footer>
+</body>
 
 </html>

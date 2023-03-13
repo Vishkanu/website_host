@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    grid-area: nav;
+    margin: 0;
+}
+
+header {
+    display: block;
+    grid-area: header;
+    background-image: url(starry_sky.jpg);
+    background-position: center;
+    background-size: 150%;
+    background-color: rgb(39, 70, 144);
+    color: white;
+    font-family: arial;
+    animation: fadeIn 2s;
+    text-align: center;
+}
+
+.Portfolio{
+    border: 0.5em solid rgb(62, 22, 75);
+    border-radius: 0.4em;
+    padding: 1em;
+}
+.outer_portfolio {
+    padding: 0.2em;
+}
+
+aside {
+    grid-area: aside;
+    background-color: rgb(49, 19, 129);
+    animation: fadeIn 2s;
+    color: white;
+}
+
+
+main {
+    grid-area: main;
+    background-color: rgb(97, 61, 141);
+    color: rgb(245, 243, 245);
+    font-family: arial;
+    animation: fadeIn 3s;
+}
+
+footer {
+    background-color: rgb(14, 16, 7);
+    color: white;
+    grid-area: footer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}

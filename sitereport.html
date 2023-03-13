@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css" media="screen">
+    <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
+    <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
     <title>Report</title>
 </head>
 <!--The report (250 word minimum) will contain your experience of learning the basics ofweb development, coding, design and debugging process.
@@ -17,8 +19,12 @@
     • You should include images of your progress and document any changes you made overtime.
     • On this page, include screenshots of validation reports showing that your pages HTMLand CSS validate-->
 
-<body>
-    <nav>
+<body id="clicked">
+    <section class="hamburger">
+        <a href="#clicked" class="showNav"></a>
+        <a href="#" class="hideNav"></a>
+    </section>
+    <nav class="navigation">
         <ul>
             <li><a href="index.html"><button class="nav_button">Home</button></a></li>
             <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>

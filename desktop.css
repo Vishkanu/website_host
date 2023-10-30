@@ -16,25 +16,28 @@ nav>ul {
 }
 
 nav>ul>li {
-    display: block;
-    font-size: 40px;
-    width: 20%;
-    text-align: center;
-    float: left;
-    font-family: Arial;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: rgb(48, 30, 70);
+    padding: 10px
 }
 
 .nav_button {
+    padding: 10px 20px;
     font-size: 40px;
-    width: 100%;
     background-color: rgb(62, 22, 75);
+    border: 3px solid white;
+    text-decoration: none;
     color: white;
 }
 
 .nav_button_selected {
+    padding: 10px 20px;
     font-size: 40px;
-    width: 100%;
     background-color: rgb(97, 61, 141);
+    border: 3px solid white;
+    text-decoration: none;
     color: white;
 }
 
@@ -54,10 +57,12 @@ header {
     background-color: rgb(39, 70, 144);
     color: white;
     text-align: center;
-    font-family: Arial;
-    padding: 100px;
+    padding: 200px;
 }
 
+#clicked > main:nth-child(4) > h2:nth-child(1){
+    padding-top:0;
+}
 
 
 aside {
@@ -77,13 +82,48 @@ aside h2 {
     padding: 1em;
 }
 
+form{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    width: 100%;
+    padding: 2em;
+    align-items: center;
+    background-color: rgb(62, 22, 75);
+    grid-column: 2;
+}
+label{
+    text-align: right;
+    padding: 1em;
+}
+input{
+    font-size: 20px;
+}
+.form_encapsulation{
+    display:grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: auto;
+}
+form > select:nth-child(6){
+    font-size: 20px;
+}
+textarea{
+    font-size: 17px;
+}
 
+input[type=submit]{
+    grid-column: 2;
+    padding: 0.5em;
+    background-color: rgb(97, 61, 141) ;
+    color: white;
+    padding: 0.7em;
+    margin-top:1em;
+}
 
 
 main {
     padding: 4em;
     font-size: 22px;
-    font-family: arial;
     animation: fadeIn 3s;
 }
 
@@ -126,7 +166,7 @@ main h3 {
 }
 
 .main_text {
-    padding-bottom: 20px;
+    padding-bottom: 2em;
 }
 
 
@@ -153,10 +193,10 @@ body {
 }
 
 .image_container_full {
-    height: 15em;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1em;
 }
 .image_container_full img{
     height: 100%;
@@ -170,4 +210,8 @@ body {
     min-width: 100%;
     object-fit: cover;
     border-radius: 5%;
+}
+
+.links{
+    font-size: 40px;
 }

@@ -8,40 +8,105 @@
     <link rel="stylesheet" href="main.css" media="screen">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
+    <script src="https://kit.fontawesome.com/01d5557bc5.js" crossorigin="anonymous"></script>
     <title>Work Experience</title>
 </head>
-<!--(Work Experience page) You will use columns on this page to demonstrate your skill.
-    The content should be based on any work experience you have, if you don’t have any work experience you can fake it for example “Working for 10 years at Google”.-->
+<!--(Portfolio page) this page will contain placeholder images that will eventually 
+    be replaced with your work from term 2 and other modules where you make things worthy of your portfolio.
+    You need to use columns on this page to demonstrate your skill.-->
 
-<body id="clicked">
-    <section class="hamburger">
+<body id="clicked"><!--This ID and the div below are in order to have the hamburger menu function.-->
+    <div class="hamburger">
         <a href="#clicked" class="showNav"></a>
         <a href="#" class="hideNav"></a>
-    </section>
+    </div>
     <nav class="navigation">
-        <ul>
-            <li><a href="index.html"><button class="nav_button">Home</button></a></li>
-            <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>
-            <li><a href="contact.html"><button class="nav_button">Contact</button></a></li>
-            <li><a href="workexperience.html"><button class="nav_button_selected">Experience</button></a></li>
-            <li><a href="sitereport.html"><button class="nav_button">Site Report</button></a></li>
+        <ul><!--this ul makes up the navbar-->
+            <li><a class="nav_button" href="index.html">Home</a></li>
+            <li><a class="nav_button" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav_button" href="contact.html">Contact</a></li>
+            <li><a class="nav_button_selected" href="workexperience.html">Experience</a></li>
+            <li><a class="nav_button" href="sitereport.html">Site Report</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Welcome to my page!</h1>
+        <h1>Work Experience</h1><!--this is the header for the page-->
     </header>
 
-    <main>
-        <p>My name is Michael and I would like to introduce you to the purpose of this page.
-            This page will display both my ability to create it and to display my future projects and other work.</p>
+    <main class="main_portfolio"><!--the following divs are in the class portfolio due to the fact the styling is identical to the portfolio page (just with different content)-->
+        <div class="outer_portfolio"><!--this encapsulates the portfolios allowing for better styling-->
+            <div class="Portfolio">
+                <h3>CGL Consultancy</h3>
+                <div class="image_container_full"><!--this encapsulates the image allowing for better styling-->
+                    <img src="CGLCL_Logo.webp" alt="An image for my first portfolio">
+                </div>
+                <p class="portfolio_text">I worked at CGL consultancy from the months of April 2020 to October 2022.
+                    Over these months I worked as a Administrative Assistant. I learned small company bookkeeping, basic
+                    office administration and using excel in a work environment. The main thing I drew from this was the
+                    bookkeeping as I learned how and why companies bookkeep and how they interact with HMRC and
+                    Companies House.</p>
+                </div>
+            </div>
+        <div class="outer_portfolio"><!--this encapsulates the portfolios allowing for better styling-->
+            <div class="Portfolio">
+                <h3>UK Project Services Group Limited</h3>
+                <div class="image_container_full"><!--this encapsulates the image allowing for better styling-->
+                    <img src="NO_LOGO.png" alt="An image for my second portfolio">
+                </div>
+                <p class="portfolio_text">This is my current Employment. I have been working here since November 2022.
+                    Under this company I have been able to further expand my skillset with things such as: web
+                    development using WordPress, stock taking and basic filing. I have been in close proximity with
+                    working consultants and have been able to learn a small amount that the industry they work in.</p>
+                </div>
+            </div>
+        <div class="outer_portfolio"><!--this encapsulates the portfolios allowing for better styling-->
+            <div class="Portfolio">
+                <h3>Work 3</h3>
+                <div class="image_container_full"><!--this encapsulates the image allowing for better styling-->
+                    <img src="placeholder_img.webp" alt="An image for my first portfolio">
+                </div>
+                <p class="portfolio_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore ullam,
+                    ipsa error sapiente magnam
+                    aut veritatis laudantium amet! Autem sapiente dolorem ipsum at numquam, fugiat rem eligendi!
+                    Tempore,
+                    ipsam?</p>
+            </div>
+        </div>
+        <div class="outer_portfolio"><!--this encapsulates the portfolios allowing for better styling-->
+            <div class="Portfolio">
+                <h3>Work 4</h3>
+                <div class="image_container_full"><!--this encapsulates the image allowing for better styling-->
+                    <img src="placeholder_img.webp" alt="An image for my first portfolio">
+                </div>
+                <p class="portfolio_text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime tempore ullam,
+                    ipsa error sapiente magnam
+                    aut veritatis laudantium amet! Autem sapiente dolorem ipsum at numquam, fugiat rem eligendi!
+                    Tempore,
+                    ipsam?</p>
+            </div>
+        </div>
+
     </main>
-    <aside>
-        <p class="aside_index">Right side of the page</p>
+    <aside><!--this is the aside. the aside is used to describe the purpose of the page.-->
+        <h2>About this page</h2>
+
+        <p class="aside_text">This page is to display my professional work. This information may well be
+            placeholder if no such work yet exists. </p>
+        <p class="aside_text"> If work is displayed here it will be my work from industry (some may be manufactured in
+            order to avoid too many placeholders).</p>
     </aside>
 
 
 
-    <footer>&copy; Michael Leggett 2023</footer>
+    <footer>
+        <p>&copy; Michael Leggett 2023</p><!--showing my copyright to all work-->
+        <div class="links"><!--these links are placeholder so currently dont go anywhere, they also use custom fonts-->
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

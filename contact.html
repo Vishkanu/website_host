@@ -8,52 +8,83 @@
     <link rel="stylesheet" href="main.css" media="screen">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
+    <script src="https://kit.fontawesome.com/01d5557bc5.js" crossorigin="anonymous"></script>
     <title>Contact</title>
 </head>
 <!--(Contact page) this page will contain your contact information and a form.Note: For CSY1063 you make the form launch the user’s email program.
     Although this is not strictly the best way of working, you won’t be able to implement a better solution
     as that requires a server-side language such as PHP which we will not use in this module.-->
 
-<body id="clicked">
-    <section class="hamburger">
+<body id="clicked"><!--This ID and the section below are in order to have the hamburger menu function.-->
+    <div class="hamburger">
         <a href="#clicked" class="showNav"></a>
         <a href="#" class="hideNav"></a>
-    </section>
+    </div>
     <nav class="navigation">
-        <ul>
-            <li><a href="index.html"><button class="nav_button">Home</button></a></li>
-            <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>
-            <li><a href="contact.html"><button class="nav_button_selected">Contact</button></a></li>
-            <li><a href="workexperience.html"><button class="nav_button">Experience</button></a></li>
-            <li><a href="sitereport.html"><button class="nav_button">Site Report</button></a></li>
+        <ul><!--this ul makes up the navbar-->
+            <li><a class="nav_button" href="index.html">Home</a></li>
+            <li><a class="nav_button" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav_button_selected" href="contact.html">Contact</a></li>
+            <li><a class="nav_button" href="workexperience.html">Experience</a></li>
+            <li><a class="nav_button" href="sitereport.html">Site Report</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Welcome to my page!</h1>
+        <h1>Contact</h1><!--this is the header for the page-->
     </header>
 
     <main>
-        <h2>Contact me!</h2>
-        <p>Below you will find a contact form that you can fill in to send an email to me regarding your inquiry. I will
-            be
-            sure to get back to you as soon as I can.</p>
+        <h2>Contact me!</h2><!--this is a subheading on the page-->
+        <p class="contact_text">Below you will find a contact form that you can fill in to send an email to me regarding your inquiry. I will
+            be sure to get back to you as soon as I can.</p>
+        <div class="form_encapsulation"><!--this div encapsulates the form and allows for styling-->
+            <form action="mailto:vishaknu123@gmail.com?subject=Contact_Form" method="GET"><!--this formats the form as a mailto form allowing email functionality-->
+                <label for="f_name">Firstname:</label>
+                <input type="text" name="f_name" id="f_name" placeholder="Please enter your first name...">
+                <label for="l_name">Lastname:</label>
+                <input type="text" name="l_name" id="l_name" placeholder="Please enter your last name...">
 
-        <form class="form_contact" action="#" method="GET">
-            <label for="f_name">Firstname:</label>
-            <input type="text" name="f_name" placeholder="Please enter your first name...">
-            <label for="l_name">Lastname:</label>
-            <input type="text" name="l_name" placeholder="Please enter your last name...">
+                <label for="type_select">What is the nature of your contact:</label>
+                <select name="type_select" id="type_select">
+                    <option value="1">General feedback</option>
+                    <option value="2">Specific Feedback</option>
+                    <option value="3">Inquiry</option>
+                    <option value="4">Urgent Communication</option>
+                    <option value="5">Generic Contact</option>
+                </select>
+
+                <label for="description"> Please enter a short description of your enquiry/ feedback:</label>
+                <textarea name="description" cols="30" rows="10" id="description"></textarea>
+
+                <input type="submit" value="Submit" name="submit">
 
 
-        </form>
+            </form>
+        </div>
+        <p class="contact_text">Any feedback provided will be key to assisting in maintenance of a usable and understandable website. Your
+            enquiries are also happily accepted and my hope is that this form creates an easy way to reach out to me.
+        </p>
     </main>
-    <aside>
-        <p class="aside_index">Right side of the page</p>
+    <aside><!--this is the aside. the aside is used to describe the purpose of the page.-->
+        <p class="aside_text">Please contact me in any way you feel is warranted, this form just creates a simple and
+            easy way to submit feedback or inquiries to me directly.</p>
+        <p class="aside_text">Contacting me is simple and easy using this form but other forms of contact will be listed
+            below:</p>
+        <p class="aside_text">Email: Lorem Ipsum</p>
+        <p class="aside_text">Phone: Lorem Ipsum</p>
     </aside>
 
 
 
-    <footer>&copy; Michael Leggett 2023</footer>
+    <footer>
+        <p>&copy; Michael Leggett 2023</p><!--showing my copyright to all work-->
+        <div class="links"><!--these links are placeholder so currently dont go anywhere, they also use custom fonts-->
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

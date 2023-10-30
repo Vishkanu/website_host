@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="main.css" media="screen">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
+    <script src="https://kit.fontawesome.com/01d5557bc5.js" crossorigin="anonymous"></script>
     <title>Report</title>
 </head>
 <!--The report (250 word minimum) will contain your experience of learning the basics ofweb development, coding, design and debugging process.
@@ -19,35 +20,93 @@
     • You should include images of your progress and document any changes you made overtime.
     • On this page, include screenshots of validation reports showing that your pages HTMLand CSS validate-->
 
-<body id="clicked">
-    <section class="hamburger">
+<body id="clicked"><!--This ID and the div below are in order to have the hamburger menu function.-->
+    <div class="hamburger">
         <a href="#clicked" class="showNav"></a>
         <a href="#" class="hideNav"></a>
-    </section>
+    </div>
     <nav class="navigation">
-        <ul>
-            <li><a href="index.html"><button class="nav_button">Home</button></a></li>
-            <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>
-            <li><a href="contact.html"><button class="nav_button">Contact</button></a></li>
-            <li><a href="workexperience.html"><button class="nav_button">Experience</button></a></li>
-            <li><a href="sitereport.html"><button class="nav_button_selected">Site Report</button></a></li>
+        <ul><!--this ul makes up the navbar-->
+            <li><a class="nav_button" href="index.html">Home</a></li>
+            <li><a class="nav_button" href="portfolio.html">Portfolio</a></li>
+            <li><a class="nav_button" href="contact.html">Contact</a></li>
+            <li><a class="nav_button" href="workexperience.html">Experience</a></li>
+            <li><a class="nav_button_selected" href="sitereport.html">Site Report</a></li>
         </ul>
     </nav>
     <header>
-        <h1>Welcome to my page!</h1>
+        <h1>Site Report</h1>
     </header>
 
     <main>
-        <p>My name is Michael and I would like to introduce you to the purpose of this page.
-            This page will display both my ability to create it and to display my future projects and other work.</p>
+        <h2>Reflecting On Constructing The Website</h2>
+        <p class="main_text">This website has been a fantastic opportunity for me to progress my knowledge with HTML and
+            CSS. Things I have learnt have allowed me to construct this very website!</p>
+        <p class="main_text">I have however faced many issues with making this website that highlighted key gaps in my
+            knowledge. An example of this was adding the responsiveness to my website. I struggled with this greatly as
+            going between CSS sheets was an issue that I had to get used to. When I originally started working on this
+            website, I had one single style sheet so when I learnt of this responsive design I had to break this one
+            style sheet into three. This took me a long amount of time to wrap my head around.</p>
+        <p class="main_text">
+            Something that took far less long and aided me greatly in creating this website is learning the shortcuts
+            for visual studio code. This allowed me to write the HTML far quicker that I would have otherwise.
+        </p>
+        <h2>Design Choices</h2>
+        <p class="main_text">Designing this website was incredibly easy as I was made aware of colour palette tools
+            online. To create my colour palette I found an image of a starry night sky that I liked the look of. From
+            this an online tool was able to give me a matching colour palette that is currently in use for this website.
+        </p>
+        <p class="main_text">Another design choice I had was with the aside. I wanted this to act as an easy to read
+            description of the page as to not have it take up too much space. I feel this puts more emphasis on the left
+            hand side of the page as many of the asides on my website refer to the text on the left.</p>
+        <p class="main_text">I wanted my navbar to cover the top of the page because, in my experience, this is the most
+            common and easiest to use. Having the navbar below the heading is something I tried but ended up disliking.
+            I also wanted the navbar to react to the user hovering over each option to make it easier to determine which
+            page you would be selecting. I did this by a slight change in colour. The navbar options also change colour
+            in order to indicate which page is currently selected.</p>
+        <h2>Progression Images</h2>
+        <div class="main_portfolio">
+            <div class="image_container_full"><img src="Homepage_no_style.png" alt=""></div>
+            <div class="image_container_full"><img src="Homepage_style.png" alt=""></div>
+            <div class="image_container_full"><img src="Portfolio_no_styel.png" alt=""></div>
+            <div class="image_container_full"><img src="Portfolio_style.png" alt=""></div>
+            <div class="image_container_full"><img src="Contact_no_style.png" alt=""></div>
+            <div class="image_container_full"><img src="Contact_style.png" alt=""></div>
+            <div class="image_container_full"><img src="Workexperience_no_style.png" alt=""></div>
+            <div class="image_container_full"><img src="Workexperience_style.png" alt=""></div>
+        </div>
+        <h2>Validation Images - HTML</h2>
+        <div class="main_portfolio">
+            <div class="image_container_full"><img src="Validation_Homepage.png" alt=""></div>
+            <div class="image_container_full"><img src="portfolio_validation.png" alt=""></div>
+            <div class="image_container_full"><img src="Validation_contact.png" alt=""></div>
+            <div class="image_container_full"><img src="validation_workexperience.png" alt=""></div>
+            <div class="image_container_full"><img src="validation_site_report.png" alt=""></div>
+        </div>
+        <h2>Validation Images - CSS</h2>
+        <div class="main_portfolio">
+            <div class="image_container_full"><img src="VALIDATION_DESKTOP.png" alt=""></div>
+            <div class="image_container_full"><img src="VALIDATION_MOBILE.png" alt=""></div>
+            <div class="image_container_full"><img src="VALIDATION_MAIN.png" alt=""></div>
+        </div>
     </main>
     <aside>
-        <p class="aside_index">Right side of the page</p>
+        <p class="aside_text">You'll find my site report on the left.</p>
+        <p class="aside_text">I hope that this will show an accurate account of my experience in making this website
+            and have accurate and clear progression and validation images.</p>
     </aside>
 
 
 
-    <footer>&copy; Michael Leggett 2023</footer>
+    <footer>
+        <p>&copy; Michael Leggett 2023</p>
+        <div class="links">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-github"></i></a>
+        </div>
+    </footer>
 </body>
 
 </html>

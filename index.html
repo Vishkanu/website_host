@@ -8,39 +8,43 @@
     <link rel="stylesheet" href="main.css" media="all">
     <link rel="stylesheet" href="mobile.css" media="screen and (max-width:1000px)">
     <link rel="stylesheet" href="desktop.css" media="screen and (min-width:1000px)">
+    <script src="https://kit.fontawesome.com/01d5557bc5.js" crossorigin="anonymous"></script>
     <title>Home Page</title>
 </head>
 
-<body id="clicked">
-    <section class="hamburger">
+<body id="clicked"><!--This ID and the section below are in order to have the hamburger menu function.-->
+    <div class="hamburger">
         <a href="#clicked" class="showNav"></a>
         <a href="#" class="hideNav"></a>
-    </section>  
+    </div>  
     <nav class = "navigation">
-            <ul>
-                <li><a href="index.html"><button class="nav_button_selected">Home</button></a></li>
-                <li><a href="portfolio.html"><button class="nav_button">Portfolio</button></a></li>
-                <li><a href="contact.html"><button class="nav_button">Contact</button></a></li>
-                <li><a href="workexperience.html"><button class="nav_button">Experience</button></a></li>
-                <li><a href="sitereport.html"><button class="nav_button">Site Report</button></a></li>
+            <ul><!--this ul makes up the nav bar-->
+                <li><a class="nav_button_selected" href="index.html">Home</a></li>
+                <li><a class="nav_button" href="portfolio.html">Portfolio</a></li>
+                <li><a class="nav_button" href="contact.html">Contact</a></li>
+                <li><a class="nav_button" href="workexperience.html">Experience</a></li>
+                <li><a class="nav_button" href="sitereport.html">Site Report</a></li>
             </ul>
     </nav>
     <header>
-        <h1>Welcome to my page!</h1>
+        <h1>Welcome to my page!</h1><!--this is the header for the page-->
     </header>
 
     <main>
         <p class="main_text">My name is Michael and I would like to introduce you to the purpose of this website.
             This website will display both my ability to create it and to display my future projects and other work.</p>
-        <h2 class="index_title">Exploring the Pages of this Website</h2>
+
+
+        <h2 class="index_title">Exploring the Pages of this Website</h2><!--this is a subheading on the website-->
+
         <P class="main_text">The pages of this website will be consisting of different pieces of content, each specific
             to their own requirements. I'm hoping this page will prove my ability in creating one that meets the correct
             standard.</P>
 
-        <section class="image_container">
+        <div class="image_container"><!--this section allows me to add styling more easily to the images-->
             <img src="explore_the_page.jpg" alt="Explore the page like an astronaut">
-        </section>
-
+        </div>
+        <!--below is a description of each of the pages and their function on the website-->
         <h3>Home Page:</h3>
         <p class="main_text">This is the page you are currently looking at and (as will be shown below) it contains
             information on what each of the pages will consist of.</p>
@@ -62,7 +66,7 @@
             other parts of this website. You will see a reflective account of my experiences on this module as well as
             screenshots confirming my HTML and CSS is valid.</p>
     </main>
-    <aside>
+    <aside><!--this is the aside. the aside is used to describe the purpose of the page.-->
         <p class="aside_text">Thank you for visiting my website!</p>
         <p class="aside_text">I hope you find the information easy to access and understand. I would love it if you
             could give me feedback!</p>
@@ -72,7 +76,16 @@
 
 
 
-    <footer>&copy; Michael Leggett 2023</footer>
+    <footer>
+        <P>&copy; Michael Leggett 2023</P><!--showing my copyright to all work-->
+    <div class="links"><!--these links are placeholder so currently dont go anywhere, they also use custom fonts-->
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
+    </div> 
+    
+    </footer>
 </body>
 
 
